@@ -1,275 +1,292 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Fanduel Frontend</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
-      crossorigin="anonymous"
-    />
-    <script src="index.js" defer></script>
-    <script>
-      function classToggle() {
-        const navs = document.querySelectorAll(".navbar-links");
 
-        navs.forEach(nav => nav.classList.toggle("navbar-toggle-show"));
-      }
-      document
-        .querySelector(".navbar-toggle")
-        .addEventListener("click", classToggle);
-    </script>
-  </head>
-  <body>
-    <header>
-      <div class="navbar">
-        <div class="logo"><img alt="logo" src="images/logo.png" /></div>
-        <div class="navbar-toggle">
-          <a href="javascript:void(0);" onClick="classToggle()"
-            ><i class="fas fa-bars"></i
-          ></a>
-        </div>
-        <nav class="navbar-links">
-          <div class="nav-item">Lobby</div>
-          <div class="nav-item">Upcoming</div>
-          <div class="nav-item">Live<i class="fas fa-angle-down"></i></div>
-          <div class="nav-item">History</div>
-        </nav>
-        <nav class="navbar-links nav-item-right">
-          <div class="nav-item">Help<i class="fas fa-angle-down"></i></div>
-          <div class="nav-item">
-            <i
-              class="fas fa-user-circle"
-              style="font-size:18px; padding-right:10px; margin-top:-20px"
-            ></i
-            >nbonaddio<i class="fas fa-angle-down"></i>
-          </div>
-          <div class="nav-item" style="border:none">
-            <h5>$1,000,000.00</h5>
-            BALANCE
-          </div>
-          <div class="nav-item" style="border:none; padding-right:0"></div>
-          <button class="btn-funds">Add funds</button>
-        </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fanduel Frontend</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+    crossorigin="anonymous" />
+  <script src="index.js" defer></script>
+  <script>
+    function classToggle() {
+      const navs = document.querySelectorAll(".navbar-links");
+
+      navs.forEach(nav => nav.classList.toggle("navbar-toggle-show"));
+    }
+    document
+      .querySelector(".navbar-toggle")
+      .addEventListener("click", classToggle);
+  </script>
+</head>
+
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo"><img alt="logo" src="images/logo.png" /></div>
+      <div class="navbar-toggle">
+        <a href="javascript:void(0);" onClick="classToggle()"><i class="fas fa-bars"></i></a>
       </div>
-    </header>
-    <section class="central">
-      <div class="top-container">
-        <div class="row">
-          <div class="column-main">
-            <div class="card">
-              <div class="warriors">GOLDEN STATE</div>
-              <br />
-              <div class="warriors-bold">WARRIORS</div>
-              <div class="warriors-score">96</div>
-              <div class="arena">
-                <h4>7:34 4th</h4>
-                <br />
-                Oracle Arena<br />Oakland, CA
-              </div>
-              <div class="thunder-score">81</div>
-              <div class="thunder">OKLAHOMA CITY</div>
-              <br />
-              <div class="thunder-bold">THUNDER</div>
-              <br />
-              <div class="snack">LAST PLAY: TV TIMEOUT. GO GET A SNACK.</div>
-              <br />
-
-              <h3>SHOW:</h3>
-              <h3 style="font-weight:900">RECENT SHOTS</h3>
-
-              <br />
-              <div class="court-container">
-                <div class="warriors">
-                  <ul>
-                    <li>FG%</li>
-                    <li><h3>55.7%</h3></li>
-                    <li>FT%</li>
-                    <li><h3>60.0%</h3></li>
-                    <li>3P%</li>
-                    <li><h3>55.5%</h3></li>
-                  </ul>
-                </div>
-                <img alt="court" src="images/court.png" />
-                <div class="thunder">
-                  <ul>
-                    <li>FG%</li>
-                    <li><h3>47.1%</h3></li>
-                    <li>FT%</li>
-                    <li><h3>80.0%</h3></li>
-                    <li>3P%</li>
-                    <li><h3>36.4%</h3></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
+      <nav class="navbar-links">
+        <div class="nav-item">Lobby</div>
+        <div class="nav-item">Upcoming</div>
+        <div class="nav-active">Live<i class="fas fa-angle-down"></i></div>
+        <div class="nav-item">History</div>
+      </nav>
+      <nav class="navbar-links nav-item-right">
+        <div class="nav-item">Help<i class="fas fa-angle-down"></i></div>
+        <div class="nav-item">
+          <i class="fas fa-user-circle" style="font-size:18px; padding-right:10px; margin-top:-20px"></i>nbonaddio<i
+            class="fas fa-angle-down"></i>
         </div>
+        <div class="nav-item" style="border:none">
+          <h5>$1,000,000.00</h5>
+          BALANCE
+        </div>
+        <div class="nav-item" style="border:none; padding-right:0"></div>
+        <button class="btn-funds">Add funds</button>
+      </nav>
+    </div>
+  </header>
+  <section class="central">
+    <div class="top-container">
+      <div class="row">
+        <div class="column-main">
+          <div class="card">
+            <div class="warriors">GOLDEN STATE</div>
+            <br />
+            <div class="warriors-bold">WARRIORS</div>
+            <div class="warriors-score">96</div>
+            <div class="arena">
+              <h4>7:34 4th</h4>
+              <br />
+              Oracle Arena<br />Oakland, CA
+            </div>
+            <div class="thunder-score">81</div>
+            <div class="thunder">OKLAHOMA CITY</div>
+            <br />
+            <div class="thunder-bold">THUNDER</div>
+            <br />
+            <div class="snack">LAST PLAY: TV TIMEOUT. GO GET A SNACK.</div>
+            <br />
 
-        <div class="row">
-          <div class="column-scoring">
-            <div class="card-right">
-              <div class="scoring-head">YOUR SCORING</div>
-              <br />
-              <div class="scoring-games">
-                <h4>THIS GAME</h4>
-                ALL GAMES
+            <h3>SHOW:</h3>
+            <h3 style="font-weight:900">RECENT SHOTS</h3>
+
+            <br />
+            <div class="court-container">
+              <div class="warriors">
+                <ul>
+                  <li>FG%</li>
+                  <li>
+                    <h3>55.7%</h3>
+                  </li>
+                  <li>FT%</li>
+                  <li>
+                    <h3>60.0%</h3>
+                  </li>
+                  <li>3P%</li>
+                  <li>
+                    <h3>55.5%</h3>
+                  </li>
+                </ul>
               </div>
-              <br />
-              <div class="excess">done</div>
+              <img alt="court" src="images/court.png" />
+              <div class="thunder">
+                <ul>
+                  <li>FG%</li>
+                  <li>
+                    <h3>47.1%</h3>
+                  </li>
+                  <li>FT%</li>
+                  <li>
+                    <h3>80.0%</h3>
+                  </li>
+                  <li>3P%</li>
+                  <li>
+                    <h3>36.4%</h3>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="bottom-container">
-        <div class="row">
-          <div class="column-plays">
-            <div class="play-card">
-              <div class="play-head">PLAY BY PLAY</div>
-              <table>
-                <tr>
-                  <td><img alt="curry" src="images/sCurry.png" /></td>
-                  <td class="text">
-                    <p>7:34 4th</p>
-                    <h5>Stephen Curry</h5>
-                    makes 13-foot jumper. Assisted by
-                    <h5>Draymond Green.</h5>
-                  </td>
-                  <td><h5>96-81, GS</h5></td>
-                </tr>
-                <tr>
-                  <td><img alt="durant" src="images/kDurant.png" /></td>
-                  <td class="text">
-                    <p>7:46 4th</p>
-                    <h5>Kevin Durant</h5>
-                    misses 2-foot layup. Rebounded by
-                    <h5>Andrew Bogut.</h5>
-                  </td>
-                  <td><h5>94-81, GS</h5></td>
-                </tr>
-                <tr>
-                  <td><img alt="klay" src="images/kThompson.png" /></td>
-                  <td class="text">
-                    <p>7:55 4th</p>
-                    <h5>Klay Thompson</h5>
-                    misses 24-foot jumper. Rebounded by
-                    <h5>Serge Ibaka.</h5>
-                  </td>
-                  <td><h5>94-81, GS</h5></td>
-                </tr>
-                <tr>
-                  <td><img alt="durant" src="images/kDurant.png" /></td>
-                  <td class="text">
-                    <p>8:17 4th</p>
-                    <h5>Kevin Durant</h5>
-                    turnover.
-                  </td>
-                  <td><h5>94-81, GS</h5></td>
-                </tr>
-                <tr>
-                  <td><img alt="curry" src="images/sCurry.png" /></td>
-                  <td class="text">
-                    <p>8:27 4th</p>
-                    <h5>Stephen Curry</h5>
-                    makes free throw.
-                  </td>
-                  <td><h5>94-81, GS</h5></td>
-                </tr>
-              </table>
+      <div class="row">
+        <div class="column-scoring">
+          <div class="card-right">
+            <div class="scoring-head">YOUR SCORING</div>
+            <br />
+            <div class="scoring-games">
+              <h4>THIS GAME</h4>
+              ALL GAMES
             </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="column-stats">
-            <div class="card-stats">
-              <div class="stats-head">STATS</div>
-              <br />
-
-              <div class="excess">done</div>
-            </div>
+            <br />
+            <div class="excess">done</div>
           </div>
         </div>
       </div>
-    </section>
-    <p></p>
-    <footer class="foot">
-      <div class="footer-top">
+    </div>
+
+    <div class="bottom-container">
+      <div class="row">
+        <div class="column-plays">
+          <div class="play-card">
+            <div class="play-head">PLAY BY PLAY</div>
+            <table>
+              <tr>
+                <td><img alt="curry" src="images/sCurry.png" /></td>
+                <td class="text">
+                  <p>7:34 4th</p>
+                  <h5>Stephen Curry</h5>
+                  makes 13-foot jumper. Assisted by
+                  <h5>Draymond Green.</h5>
+                </td>
+                <td>
+                  <h5>96-81, GS</h5>
+                </td>
+              </tr>
+              <tr>
+                <td><img alt="durant" src="images/kDurant.png" /></td>
+                <td class="text">
+                  <p>7:46 4th</p>
+                  <h5>Kevin Durant</h5>
+                  misses 2-foot layup. Rebounded by
+                  <h5>Andrew Bogut.</h5>
+                </td>
+                <td>
+                  <h5>94-81, GS</h5>
+                </td>
+              </tr>
+              <tr>
+                <td><img alt="klay" src="images/kThompson.png" /></td>
+                <td class="text">
+                  <p>7:55 4th</p>
+                  <h5>Klay Thompson</h5>
+                  misses 24-foot jumper. Rebounded by
+                  <h5>Serge Ibaka.</h5>
+                </td>
+                <td>
+                  <h5>94-81, GS</h5>
+                </td>
+              </tr>
+              <tr>
+                <td><img alt="durant" src="images/kDurant.png" /></td>
+                <td class="text">
+                  <p>8:17 4th</p>
+                  <h5>Kevin Durant</h5>
+                  turnover.
+                </td>
+                <td>
+                  <h5>94-81, GS</h5>
+                </td>
+              </tr>
+              <tr>
+                <td><img alt="curry" src="images/sCurry.png" /></td>
+                <td class="text">
+                  <p>8:27 4th</p>
+                  <h5>Stephen Curry</h5>
+                  makes free throw.
+                </td>
+                <td>
+                  <h5>94-81, GS</h5>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column-stats">
+          <div class="card-stats">
+            <div class="stats-head">STATS</div>
+            <br />
+
+            <div class="excess">done</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <p></p>
+  <footer class="foot">
+    <div class="footer-top">
+      <ul>
+        <li class='active'>NBA</li>
+        <li>MLB</li>
+        <li>NCAAF</li>
+      </ul>
+    </div>
+    <div class="footer-container">
+      <i class="fas fa-angle-left" style="float:left"></i>
+      <div class="footer">
         <ul>
-          <li>NBA</li>
-          <li>MLB</li>
-          <li>NCAAF</li>
+          <li>
+            WARRIORS
+            <h5>96</h5>
+            <br />
+            THUNDER
+            <h5>81</h5>
+            <br />
+            <h6>7:34 4th TV: ESPN</h6>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <h5>GSW</h5>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <h5>S. Curry, PG</h5>
+            <br />
+            <h6>23 points, 6 assists</h6>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <h5>OKC</h5>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <h5>K. Durant, SF</h5>
+            <br />
+            <h6>30 points, 9 rebounds</h6>
+          </li>
         </ul>
       </div>
-      <div class="footer-container">
-        <i class="fas fa-angle-left" style="float:left"></i>
-        <div class="footer">
-          <ul>
-            <li>
-              WARRIORS
-              <h5>96</h5>
-              <br />
-              THUNDER
-              <h5>81</h5>
-              <br />
-              <h6>7:34 4th TV: ESPN</h6>
-            </li>
-          </ul>
-          <ul>
-            <li><h5>GSW</h5></li>
-          </ul>
-          <ul>
-            <li>
-              <h5>S. Curry, PG</h5>
-              <br />
-              <h6>23 points, 6 assists</h6>
-            </li>
-          </ul>
-          <ul>
-            <li><h5>OKC</h5></li>
-          </ul>
-          <ul>
-            <li>
-              <h5>K. Durant, SF</h5>
-              <br />
-              <h6>30 points, 9 rebounds</h6>
-            </li>
-          </ul>
-        </div>
-        <div class="footer-right">
-          <ul>
-            <li>
-              CHI
-              <h5>56</h5>
-              <br />
-              BOS
-              <h5>54</h5>
-              <br />
-              <h6>6:33 3rd</h6>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              ATL
-              <h5>26</h5>
-              <br />
-              MEM
-              <h5>24</h5>
-              <br />
-              <h6>12:00 2nd</h6>
-            </li>
-          </ul>
-        </div>
-        <i class="fas fa-angle-right" style="float:right"></i>
+      <div class="footer-right">
+        <ul>
+          <li>
+            CHI
+            <h5>56</h5>
+            <br />
+            BOS
+            <h5>54</h5>
+            <br />
+            <h6>6:33 3rd</h6>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            ATL
+            <h5>26</h5>
+            <br />
+            MEM
+            <h5>24</h5>
+            <br />
+            <h6>12:00 2nd</h6>
+          </li>
+        </ul>
       </div>
-    </footer>
-  </body>
+      <i class="fas fa-angle-right" style="float:right"></i>
+    </div>
+  </footer>
+</body>
+
 </html>
